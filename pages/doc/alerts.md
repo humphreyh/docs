@@ -35,7 +35,7 @@ Backtesting does not always exactly match the actual alert firing. For example, 
 To create an alert:
 
 <ol>
-<li>Do one of the following:
+<li>Do one of the 
 <ul>
 <li markdown="span"><strong>Alerts browser</strong> - Select <strong>Alerts</strong> and click the <strong>Create Alert</strong> button located at the top of the filter bar.</li>
 <li markdown="span"><strong>Chart</strong> - Hover over a query field and click the <strong>Create Alert</strong> link below the query field. </li>
