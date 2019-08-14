@@ -24,7 +24,7 @@ Because some customers told us they'd like to send data directly to the Wavefron
 The following examples illustrate how to send data to Wavefront.
 * An [API token](wavefront_api.html#generating-an-api-token) is required. Referred to as `<TOKEN>` in the examples.
 * You must know your Wavefront domain name. These examples use `mydomain.wavefront.com`.
-* Currently, we support only [Wavefront Data Format](wavefront_data_format.html), which is named `wavefront`. If you don't specify `f=wavefront`, we still use that format.
+* We default to using the [Wavefront Data Format](wavefront_data_format.html) if no format is specified with the `f=` parameter. 
 
 ### Multiple Data Points
 
@@ -40,6 +40,9 @@ You can send a single data point like this:
 ```
 echo "hello.world 1 source=<myhost>" | curl -H "Authorization: Bearer <TOKEN>" --data @- https://mydomain.wavefront.com/report
 ```
+
+Note:
+* The example above leaves out the format but you can also specify `f=wavefront` explicitly.
 
 ### Histogram Distribution
 
